@@ -1,19 +1,24 @@
 {
-  "name": "@j127/a_href_ping",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "J. Cohen <hostelmarketing@gmail.com> (https://github.com/j127)",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "hbs": "^4.1.1",
-    "helmet": "^4.1.0"
-  }
+    "name": "@j127/a_href_ping",
+    "version": "0.1.0",
+    "description": "An example of the ping attribute",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "author": "J. Cohen <hostelmarketing@gmail.com> (https://github.com/j127)",
+    "license": "BSD-3-Clause",
+    "private": true,
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "hbs": "^4.1.1",
+        "helmet": "^4.1.0",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "prettier": "^2.1.1",
+        "nodemon": "^2.0.4"
+    }
 }

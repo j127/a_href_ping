@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>hello world</h1>
+        <ul>
+            <li>
+                <a href="#" ping="/stats?a=123&b=abc">link 1</a>
+            </li>
+            <li>
+                <a href="#" ping="/stats?x=you+clicked+link+2">link 2</a>
+            </li>
+            <li>
+                <a href="#" ping="/stats?query=you+can+do+whatever+you+want">link 3</a>
+            </li>
+            <li>
+                <a href="#" ping="/stats?asdf=fdsa&zxcv=vcxz">link 4</a>
+            </li>
+        </ul>
+        <script>
+            // prevent the link clicks from navigating
+            [...document.querySelectorAll("a")].forEach(a => a.addEventListener("click", e => e.preventDefault()));
+        </script>
+    </body>
+</html>
